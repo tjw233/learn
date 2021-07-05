@@ -6,7 +6,7 @@
 
 int main() {
     srand(time(0));
-    for (int i = 1; i <= 5; ++i) {
+    for (int i = 1; i <= 10; ++i) {
         int a = rand() % 50;
         int b = rand() % 50;
         int k = rand() % 2 ? 1 : -1;
@@ -17,7 +17,7 @@ int main() {
             k = rand() % 2 ? 1 : -1;
             c = a + b * k;
         }
-        printf("%d/5:  %d", i, a);
+        printf("%d/10:  %d", i, a);
         if (k == -1) 
             printf("-");
         else
